@@ -1,4 +1,4 @@
 git add .
-git commit -m "initial commit"
+git commit -m "fixed footer error"
 git push origin main
 
