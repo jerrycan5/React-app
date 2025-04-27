@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Your theme settings */
+@layer base {
+  :root {
+    /* Light Mode Variables */
+    --background: #ffffff;
+    --foreground: #1f2937; /* text-gray-800 */
+    --primary: #4f46e5; /* indigo-600 */
+    --secondary: #6366f1; /* indigo-500 */
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft black shadow */
+  }
+
+  .dark {
+    /* Dark Mode Variables */
+    --background: #111827; /* gray-900 */
+    --foreground: #f9fafb; /* text-gray-50 */
+    --primary: #6366f1; /* lighter indigo */
+    --secondary: #818cf8;
+    --card-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Soft white shadow for dark mode */
+  }
+
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300;
+  }
+}
